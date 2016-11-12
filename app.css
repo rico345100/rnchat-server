@@ -1,0 +1,108 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+#header {
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+	height: 50px;
+    background-color: #1a66b3;
+	padding: 16px;
+}
+	#header > #title {
+		color: #fff;
+	}
+	#header > #set-name {
+		position: absolute;
+		top: 12px;
+		right: 10px;
+		color: #1a66b3;
+		background-color: #fff;
+		border: none;
+		padding: 8px 16px;
+		cursor: pointer;
+	}
+		#header > #set-name:hover {
+			background-color: #eee;
+		}
+
+#content {
+	position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #eee;
+}
+	#content > #author {
+		z-index: 100;
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		color: #1a66b3;
+	}
+		#content > #author > a {
+			color: #c05907;
+		}
+			#content > #author > a:hover {
+				text-decoration: underline;
+			}
+
+#chat {
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 70px;
+	overflow-y: auto;
+	padding: 16px;
+}
+	#chat > p {
+		margin-bottom: 8px;
+	}
+
+#chat-form {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 70px;
+	padding: 8px;
+}
+	#chat-form > #message {
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		padding: 16px;
+		padding-right: 166px;
+		font-size: 20px;
+		border: none;
+		border-top: 1px solid #4f8fd0;
+	}
+	#chat-form > #submit {
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 150px;
+		border: none;
+		background-color: #4f8fd0;
+		color: #fff;
+		font-size: 16px;
+	}
